@@ -1,0 +1,30 @@
+{
+  "receipts": [
+    {
+      "id": 1,
+      "date": "2026-02-25T03:00:00Z",
+      "title": "Built Decision Journal v1",
+      "category": "Completion",
+      "impact": 7,
+      "confidence_score": 8
+    },
+    {
+      "id": 2,
+      "date": "2026-02-26T03:00:00Z",
+      "title": "Built Anti-Restart Vault",
+      "category": "Completion",
+      "impact": 9,
+      "confidence_score": 9
+    },
+    {
+      "id": 3,
+      "date": "2026-02-27T07:15:00Z",
+      "title": "Built Confidence Receipts Engine",
+      "category": "Completion",
+      "impact": 8,
+      "confidence_score": 8
+    }
+  ],
+  "streak": 3,
+  "last_receipt_date": "2026-02-27T07:15:00Z"
+}
