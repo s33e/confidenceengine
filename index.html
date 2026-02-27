@@ -51,6 +51,14 @@
             font-size: 0.95em;
             font-weight: 500;
         }
+        .label-help {
+            display: block;
+            font-size: 0.85em;
+            color: #9ca3af;
+            font-weight: 400;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
         input[type="text"], select { 
             width: 100%; 
             padding: 12px 16px; 
@@ -98,7 +106,7 @@
         
         .slider-value { 
             display: inline-block; 
-            min-width: 30px; 
+            min-width: 20px; 
             text-align: right; 
             color: #3b82f6; 
             font-weight: 600;
@@ -272,12 +280,18 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="impact">Impact: <span class="slider-value" id="impact-value">5</span>/10</label>
+                    <label for="impact">
+                        Impact: <span class="slider-value" id="impact-value">5</span>
+                        <span class="label-help">How much does this matter objectively? Does it move the needle on your goals?</span>
+                    </label>
                     <input type="range" id="impact" min="1" max="10" value="5">
                 </div>
                 
                 <div class="form-group">
-                    <label for="confidence">Confidence Level: <span class="slider-value" id="confidence-value">5</span>/10</label>
+                    <label for="confidence">
+                        Confidence: <span class="slider-value" id="confidence-value">5</span>
+                        <span class="label-help">How certain did you feel at the time? Your internal measure of self-trust.</span>
+                    </label>
                     <input type="range" id="confidence" min="1" max="10" value="5">
                 </div>
                 
@@ -357,8 +371,8 @@
                     </div>
                     <div class="receipt-meta">
                         <span class="category-tag">${r.category}</span>
-                        <span>Impact: <span class="impact-tag">${r.impact}/10</span></span>
-                        <span class="confidence-tag">Confidence: ${r.confidence_score}/10</span>
+                        <span>Impact: <span class="impact-tag">${r.impact}</span></span>
+                        <span class="confidence-tag">Confidence: ${r.confidence_score}</span>
                     </div>
                 </div>
             `).join('');
